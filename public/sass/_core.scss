@@ -1,0 +1,106 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "../components/font-awesome/scss/font-awesome";
+@import "../components/world-flags/scss/flags";
+
+$fa-font-path: "../components/font-awesome/fonts";
+
+/** Color related definitions **/
+$background-color: #fafafa;
+
+/** Weight definitions **/
+$header-weight:  100;
+$header-bold-weight: 200;
+$header-description-weight: 200;
+
+/** **/
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+  //src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** **/
+
+.container-entire-viewport{ width: 100vw; height: 100vh; overflow: hidden;}
+.container-absolute{ position:absolute; top:0; left:0; }
+.container-abstract-branding{z-index:-10;}
+
+.bordered{border: 1px #ccc solid;}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.btn{
+  font-weight: 200;
+
+  &:hover{
+    @include fade(fadeIn, 500ms, $from-opacity: .6);
+  }
+
+}
+
+.btn-default{
+  @extend .btn;
+
+  &:hover {}
+}
+
+.btn-warning{
+  @extend .btn;
+  border-bottom: 3px #da8711 solid;
+  color:#fafafa !important;
+
+  &:hover{
+    background-color: #ec971f !important;
+  }
+}
+
+.btn-danger{
+  @extend .btn;
+  border-bottom: 3px #c9302c solid;
+  color:#fafafa !important;
+
+  &:hover{
+    background-color: #c9302c !important;
+  }
+}
+
+.btn-success{
+  border-bottom: 3px #449d44 solid;
+  color:#fafafa !important;
+  font-weight: 200;
+
+  &:hover {
+    background-color: #449d44 !important;
+  }
+}
+
+.btn-primary{
+  @extend .btn;
+  border-bottom: 3px #3071a9 solid;
+  color:#fafafa !important;
+
+  &:hover{
+    background-color: #3071a9 !important;
+  }
+}
+

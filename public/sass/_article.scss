@@ -1,0 +1,55 @@
+article.container-main-page{
+
+	background-image: url('../images/main-code.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size:cover;
+
+	h1{
+		margin-top: 30vh;
+
+		@include weight(100);
+		font-size: 4em;
+
+		& strong{
+			@include weight(300);
+		}
+	}
+
+	p.mydescription{
+		@include weight(100);
+		font-size: 2em;
+
+		& a.label{
+			@include weight(100);
+		}
+
+		& strong{
+			@include weight(300);
+		}
+	}
+
+	nav{
+		margin: 20px auto 10px auto;
+
+		& > li > a {
+			@include weight(100);
+		}
+
+		& > li{
+			list-style:none;
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+
+	small{
+		font-size: .8em;
+		@include weight(200);
+
+		& strong{
+			@include weight(500);
+		}
+	}
+	
+}

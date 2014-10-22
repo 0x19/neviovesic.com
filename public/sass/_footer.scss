@@ -1,0 +1,29 @@
+footer {
+
+	section {
+		&.absolute-footer {
+			width:100vw;
+			position:fixed;
+			bottom:20px;
+		}
+
+		small {
+			margin-left:30px;
+			font-size: 1em;
+			@include weight(200);
+
+			a {
+				color: #333;
+				@include weight(400);
+
+				&:hover{
+					@include fade(fadeIn, 400ms, $from-opacity: .8);
+					color:#333;
+					text-shadow: 0px 0px 1px #ccc;
+					text-decoration: none;
+				}
+
+			}
+		}
+	}
+}

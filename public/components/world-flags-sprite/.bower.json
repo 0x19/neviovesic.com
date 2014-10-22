@@ -1,0 +1,14 @@
+{
+  "name": "world-flags-sprite",
+  "homepage": "https://github.com/lafeber/world-flags-sprite",
+  "_release": "58307464a4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "58307464a42b4fb5a5cc5cbb15b4b039232f4f9e"
+  },
+  "_source": "https://github.com/lafeber/world-flags-sprite.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/lafeber/world-flags-sprite.git",
+  "_direct": true
+}

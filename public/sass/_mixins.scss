@@ -1,0 +1,16 @@
+@mixin weight($size){
+	font-weight: $size;
+}
+
+@mixin text-line($size, $color, $display: none) {  
+	i, span, strong{
+		border-bottom:2px $color solid;
+		width:$size;
+	}
+
+	@if $display != none {
+		i, span, strong {
+			display: $display;
+		}
+	}
+}
