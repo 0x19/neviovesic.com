@@ -5,20 +5,22 @@ footer {
 			width:100vw;
 			position:fixed;
 			bottom:20px;
+			padding:10px 0px 10px 0px;
 		}
 
 		small {
 			margin-left:30px;
-			font-size: 1em;
-			@include weight(200);
+			font-size: 2em;
+			@include weight(100);
+			color:#585858;
 
 			a {
-				color: #333;
-				@include weight(400);
+				color: #585858;
+				@include weight(200);
 
 				&:hover{
 					@include fade(fadeIn, 400ms, $from-opacity: .8);
-					color:#333;
+					color:#585858;
 					text-shadow: 0px 0px 1px #ccc;
 					text-decoration: none;
 				}
@@ -26,4 +28,5 @@ footer {
 			}
 		}
 	}
+	
 }
