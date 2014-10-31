@@ -1,8 +1,6 @@
 package app
 
 import (
-	"math/rand"
-	"time"
 	"github.com/revel/revel"
 )
 
@@ -40,10 +38,6 @@ var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {
 
 
 	revel.TemplateFuncs["slice"] =  func(n int) []int { return make([]int, n) }
-	revel.TemplateFuncs["randstring"] = func(items ...string) string {
-		r := rand.New(rand.NewSource(time.Now().UnixNano()))
-		return items[r.Intn(len(items))]
-	}
 
 	fc[0](c, fc[1:]) // Execute the next filter stage.
 }
