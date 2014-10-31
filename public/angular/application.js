@@ -9,4 +9,10 @@
 
   app = window.app = angular.module(service.name, ['ui.router']);
 
+  app.run(function($rootScope, $state) {
+    return $rootScope.$on('$stateChangeError', function(event, toState, fromState, fromParams, error) {
+      return $state.go('404');
+    });
+  });
+
 }).call(this);

@@ -11,7 +11,11 @@ GET     /templates/footer                       Templates.Footer
 
 GET     /templates/home                         Templates.HomePage
 GET     /templates/biography                    Templates.Biography
+GET     /templates/playground                   Templates.Playground
 GET     /templates/contact                      Templates.Contact
+
+GET     /templates/404                          Templates.Error404
+GET     /templates/500                          Templates.Error500
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

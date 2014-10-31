@@ -48,11 +48,32 @@ func (_ tTemplates) Biography(
 	return revel.MainRouter.Reverse("Templates.Biography", args).Url
 }
 
+func (_ tTemplates) Playground(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("Templates.Playground", args).Url
+}
+
 func (_ tTemplates) Contact(
 		) string {
 	args := make(map[string]string)
 	
 	return revel.MainRouter.Reverse("Templates.Contact", args).Url
+}
+
+func (_ tTemplates) Error404(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("Templates.Error404", args).Url
+}
+
+func (_ tTemplates) Error500(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("Templates.Error500", args).Url
 }
 
 

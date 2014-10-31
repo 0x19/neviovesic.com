@@ -46,3 +46,27 @@ app.config ($stateProvider, $urlRouterProvider) ->
 			'footer@': footer_view
 		}
 	})
+
+	$stateProvider.state('playground', {
+		url: '/playground',
+		views: {
+			'': 
+				templateUrl: '/templates/playground/'
+				controller: ($scope) ->
+					
+			'header@': header_view
+			'footer@': footer_view
+		}
+	})
+
+	$stateProvider.state('404', {
+		url: '/404',
+		views: {
+			'': 
+				templateUrl: '/templates/404/'
+				controller: ($scope) ->
+					
+			'header@': header_view
+			'footer@': footer_view
+		}
+	})

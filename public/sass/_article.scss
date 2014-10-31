@@ -22,6 +22,29 @@ section.viewport-dark{
 	border:none;
 }
 
+section.viewport-error{
+	width:100vw;
+	background-color: #c0392b;
+	margin-left:-15px;
+	padding:0px;
+	border:none;
+}
+
+section.viewport-article{
+	width:100vw;
+	background-color: #ecf0f1;
+	margin-left:-15px;
+	padding:0px;
+	border:none;
+}
+
+section.viewport-playground{
+	width:100vw;
+	background-color: #27ae60;
+	margin-left:-15px;
+	padding:0px;
+	border:none;
+}
 
 article.container-main-page{
 
@@ -201,6 +224,147 @@ article.container-contact{
 			text-shadow: 0px 0px 1px #7a8c9f;
 			@include fade(fadeIn, 600ms, $from-opacity: .8);
 		}
+	}
+
+}
+
+
+article.container-error{
+
+	color: #fbb2aa;
+
+	h1{
+		margin-top: 30vh;
+
+		@include weight(100);
+		font-size: 5em;
+
+		& strong{
+			@include weight(200);
+		}
+	}
+
+	p.mydescription{
+		@include weight(100);
+		font-size: 2em;
+
+		& a{
+			@include weight(100);
+		}
+
+		& > a:hover{
+			@include fade(fadeIn, 600ms, $from-opacity: .8);
+		}
+
+		& strong{
+			@include weight(300);
+		}
+	}
+
+	h6{
+		margin-top:10vh;
+		font-size: 15em;
+		color:#c73d2f;
+		margin-left:-30px;
+	}
+
+
+}
+
+
+article.container-404{
+	@extend article.container-error
+}
+
+article.container-article{
+
+	padding:40px 0px 10px 0px;
+
+	p.bigabout{
+		font-size: 1.5em;
+		@include weight(100);
+
+		& a {
+			@include weight(100);
+		}
+
+		& strong {
+			@include weight(300);
+		}
+	}
+
+	nav {
+		overflow:auto;
+		margin-top:50px;
+
+		& li {
+			list-style: none;
+			display: inline-block;
+			margin-right:25px;
+			margin-bottom:30px;
+
+			p{
+				color: #666;
+				font-size: 3em;
+				@include weight(100);
+
+				strong{
+					@include weight(100);
+					font-size: .4em;
+					position:absolute;
+					margin-top:-13px;
+				}
+			}
+
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+	}
+
+}
+
+
+article.container-underdevelopment{
+
+	color: #c4f9da;
+
+	h1{
+		margin-top: 30vh;
+
+		@include weight(100);
+		font-size: 5em;
+
+		& strong{
+			@include weight(200);
+		}
+	}
+
+	p.mydescription{
+		@include weight(100);
+		font-size: 2em;
+
+		& a{
+			color: #c4f9da;
+			@include weight(100);
+
+			&:hover{
+				color:#c4f9da;
+				text-shadow: 0px 0px 1px #c4f9da;
+				@include fade(fadeIn, 600ms, $from-opacity: .8);
+			}
+		}
+
+		& strong{
+			@include weight(300);
+		}
+	}
+
+	h6{
+		margin-top:10vh;
+		font-size: 15em;
+		color:#2ecc71;
+		margin-left:-30px;
 	}
 
 }

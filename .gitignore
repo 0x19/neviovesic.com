@@ -28,3 +28,5 @@ _testmain.go
 
 .sass-cache
 .DS_Store
+.pyc
+deployment/settings_local.py

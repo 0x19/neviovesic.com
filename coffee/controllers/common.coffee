@@ -29,6 +29,8 @@ class NavigationCtrl extends BaseCtrl
   @isNavActive: false
   @isBiographyPage: false
   @isContactPage: false
+  @isPlaygroundPage: false
+  @isErrorPage: false
 
   initialize: ->
     @$scope.pageName   = @$state.current.name
@@ -37,7 +39,8 @@ class NavigationCtrl extends BaseCtrl
     @$scope.isHomePage = @$state.current.name == 'home'
     @$scope.isBiographyPage = @$state.current.name == 'biography'
     @$scope.isContactPage = @$state.current.name == 'contact'
-
+    @$scope.isPlaygroundPage = @$state.current.name == 'playground'
+    @$scope.isErrorPage = @$state.current.name == '404' or @$state.current.name == '500'
 
   toggleNav: ->
     if @$scope.isNavActive == undefined

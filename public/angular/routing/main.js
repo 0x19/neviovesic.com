@@ -34,11 +34,33 @@
         'footer@': footer_view
       }
     });
-    return $stateProvider.state('contact', {
+    $stateProvider.state('contact', {
       url: '/contact',
       views: {
         '': {
           templateUrl: '/templates/contact/',
+          controller: function($scope) {}
+        },
+        'header@': header_view,
+        'footer@': footer_view
+      }
+    });
+    $stateProvider.state('playground', {
+      url: '/playground',
+      views: {
+        '': {
+          templateUrl: '/templates/playground/',
+          controller: function($scope) {}
+        },
+        'header@': header_view,
+        'footer@': footer_view
+      }
+    });
+    return $stateProvider.state('404', {
+      url: '/404',
+      views: {
+        '': {
+          templateUrl: '/templates/404/',
           controller: function($scope) {}
         },
         'header@': header_view,

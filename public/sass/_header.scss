@@ -225,6 +225,155 @@ header {
 			}
 		}
 
+		&.error-header{
+			background-color: #c0392b;
+			border-bottom:1px #e74c3c solid;
+
+			& a.menu-handler{
+				border:1px #e74c3c solid;
+				color:#e74c3c;
+
+				&:hover{
+					color:#d54233;
+					text-shadow: 0px 0px 1px #d54233;
+				}
+			}
+
+			& .left-nav{
+
+				a {
+					color:#e74c3c;
+
+					&:hover{
+						color:#d54233;
+						text-shadow: 0px 0px 1px #d54233;
+					}
+
+					&.active{
+						color:#d54233;
+						text-shadow: 0px 0px 1px #d54233;
+					}
+
+				}
+			}
+
+			& .social-nav{
+
+				a {
+					color:#e74c3c;
+
+					&:hover{
+						color:#d54233;
+						text-shadow: 0px 0px 1px #d54233;
+					}
+
+				}
+			}
+
+			& .main-menu{
+				background-color: #c0392b;
+				border-bottom:1px #e74c3c solid;
+				border-top: 1px #e74c3c solid;
+
+				.nav{
+
+					a {
+						color:#ff8e82;
+
+						&:hover{
+							color:#fda39a;
+							text-shadow: 0px 0px 1px #fda39a;
+						}
+
+						&.active{
+							color:#fda39a;
+							text-shadow: 0px 0px 1px #fda39a;
+						}
+					
+					}
+
+					p{
+						color:#fda39a;
+					}
+				}
+			}
+		}
+
+
+		&.green-header{
+			background-color: #27ae60;
+			border-bottom:1px #2ecc71 solid;
+
+			& a.menu-handler{
+				border:1px #2ecc71 solid;
+				color:#2ecc71;
+
+				&:hover{
+					color:#4bd786;
+					text-shadow: 0px 0px 1px #4bd786;
+				}
+			}
+
+			& .left-nav{
+
+				a {
+					color:#2ecc71;
+
+					&:hover{
+						color:#4bd786;
+						text-shadow: 0px 0px 1px #4bd786;
+					}
+
+					&.active{
+						color:#4bd786;
+						text-shadow: 0px 0px 1px #4bd786;
+					}
+
+				}
+			}
+
+			& .social-nav{
+
+				a {
+					color:#2ecc71;
+
+					&:hover{
+						color:#4bd786;
+						text-shadow: 0px 0px 1px #4bd786;
+					}
+
+				}
+			}
+
+			& .main-menu{
+				background-color: #27ae60;
+				border-bottom:1px #2ecc71 solid;
+				border-top: 1px #2ecc71 solid;
+
+				.nav{
+
+					a {
+						color:#7beaaa;
+
+						&:hover{
+							color:#9ff7c4;
+							text-shadow: 0px 0px 1px #9ff7c4;
+						}
+
+						&.active{
+							color:#9ff7c4;
+							text-shadow: 0px 0px 1px #9ff7c4;
+						}
+					
+					}
+
+					p{
+						color:#9ff7c4;
+					}
+				}
+			}
+		}
+
 		&.spy-row{
 			width:100vw;
 			position:fixed;

@@ -105,6 +105,16 @@ $header-description-weight: 200;
   }
 }
 
+.label-danger{
+  @extend .label;
+  border: 1px #c9302c solid;
+  color:#fafafa !important;
+  
+  &:hover{
+    background-color: #c9302c !important;
+  }
+}
+
 a:focus {
   outline: none;
 }
