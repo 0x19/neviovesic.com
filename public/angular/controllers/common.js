@@ -63,9 +63,28 @@
 
     NavigationCtrl.isHomePage = false;
 
+    NavigationCtrl.isNavActive = false;
+
+    NavigationCtrl.isBiographyPage = false;
+
+    NavigationCtrl.isContactPage = false;
+
     NavigationCtrl.prototype.initialize = function() {
       this.$scope.pageName = this.$state.current.name;
-      return this.$scope.isHomePage = this.$state.current.name === 'home';
+      this.$scope.isNavActive = this.isNavActive;
+      this.$scope.isHomePage = this.$state.current.name === 'home';
+      this.$scope.isBiographyPage = this.$state.current.name === 'biography';
+      return this.$scope.isContactPage = this.$state.current.name === 'contact';
+    };
+
+    NavigationCtrl.prototype.toggleNav = function() {
+      var _ref;
+      if (this.$scope.isNavActive === void 0) {
+        this.$scope.isNavActive = false;
+      }
+      return this.$scope.isNavActive = this.isNavActive = (_ref = this.$scope.isNavActive === false) != null ? _ref : {
+        "true": false
+      };
     };
 
     return NavigationCtrl;

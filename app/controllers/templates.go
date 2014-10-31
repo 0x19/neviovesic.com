@@ -11,14 +11,18 @@ func (c Templates) Header() revel.Result {
 	return c.RenderTemplate("templates/header.html")
 }
 
-func (c Templates) HeaderMini() revel.Result {
-	return c.RenderTemplate("templates/header-mini.html")
-}
-
 func (c Templates) Footer() revel.Result {
 	return c.RenderTemplate("templates/footer.html")
 }
 
 func (c Templates) HomePage() revel.Result {
 	return c.RenderTemplate("templates/home.html")
+}
+
+func (c Templates) Biography() revel.Result {
+	return c.RenderTemplate("templates/biography.html")
+}
+
+func (c Templates) Contact() revel.Result {
+	return c.RenderTemplate("templates/contact.html")
 }

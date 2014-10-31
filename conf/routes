@@ -7,10 +7,11 @@ module:testrunner
 GET     /                                       App.Router
 
 GET     /templates/header                       Templates.Header
-GET     /templates/header-mini                  Templates.HeaderMini
 GET     /templates/footer                       Templates.Footer
 
 GET     /templates/home                         Templates.HomePage
+GET     /templates/biography                    Templates.Biography
+GET     /templates/contact                      Templates.Contact
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

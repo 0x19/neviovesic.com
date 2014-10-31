@@ -96,11 +96,16 @@ $header-description-weight: 200;
 
 .btn-primary{
   @extend .btn;
+  border-color:#3071a9;
   border-bottom: 3px #3071a9 solid;
   color:#fafafa !important;
 
   &:hover{
     background-color: #3071a9 !important;
   }
+}
+
+a:focus {
+  outline: none;
 }
 

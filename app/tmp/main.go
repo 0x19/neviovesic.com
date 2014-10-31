@@ -52,13 +52,6 @@ func main() {
 				},
 			},
 			&revel.MethodType{
-				Name: "HeaderMini",
-				Args: []*revel.MethodArg{ 
-				},
-				RenderArgNames: map[int][]string{ 
-				},
-			},
-			&revel.MethodType{
 				Name: "Footer",
 				Args: []*revel.MethodArg{ 
 				},
@@ -67,6 +60,20 @@ func main() {
 			},
 			&revel.MethodType{
 				Name: "HomePage",
+				Args: []*revel.MethodArg{ 
+				},
+				RenderArgNames: map[int][]string{ 
+				},
+			},
+			&revel.MethodType{
+				Name: "Biography",
+				Args: []*revel.MethodArg{ 
+				},
+				RenderArgNames: map[int][]string{ 
+				},
+			},
+			&revel.MethodType{
+				Name: "Contact",
 				Args: []*revel.MethodArg{ 
 				},
 				RenderArgNames: map[int][]string{ 

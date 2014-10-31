@@ -5,7 +5,7 @@
     console.log("Processing out main application routes ...");
     $urlRouterProvider.otherwise('/');
     header_view = {
-      templateUrl: '/templates/header-mini/',
+      templateUrl: '/templates/header/',
       controller: 'HeaderCtrl'
     };
     footer_view = {
@@ -19,18 +19,26 @@
           templateUrl: '/templates/home/',
           controller: function($scope) {}
         },
-        'header@': {
-          templateUrl: '/templates/header/',
-          controller: 'HeaderCtrl'
-        },
+        'header@': header_view,
         'footer@': footer_view
       }
     });
-    return $stateProvider.state('signin', {
-      url: '/signin',
+    $stateProvider.state('biography', {
+      url: '/biography',
       views: {
         '': {
-          templateUrl: '/templates/signin/',
+          templateUrl: '/templates/biography/',
+          controller: function($scope) {}
+        },
+        'header@': header_view,
+        'footer@': footer_view
+      }
+    });
+    return $stateProvider.state('contact', {
+      url: '/contact',
+      views: {
+        '': {
+          templateUrl: '/templates/contact/',
           controller: function($scope) {}
         },
         'header@': header_view,

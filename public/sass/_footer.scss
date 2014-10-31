@@ -1,32 +1,38 @@
 footer {
+	background-color:#34495e;
+	clear:both;
 
 	section {
-		&.absolute-footer {
-			width:100vw;
-			position:fixed;
-			bottom:20px;
-			padding:10px 0px 10px 0px;
-		}
+		&.container {
+			margin:20px auto 20px auto;
+			color:#6f8498;
 
-		small {
-			margin-left:30px;
-			font-size: 2em;
-			@include weight(100);
-			color:#585858;
+			h2{
+				font-size: 3em;
+				@include weight(100);
 
-			a {
-				color: #585858;
-				@include weight(200);
-
-				&:hover{
-					@include fade(fadeIn, 400ms, $from-opacity: .8);
-					color:#585858;
-					text-shadow: 0px 0px 1px #ccc;
-					text-decoration: none;
+				strong{
+					@include weight(300);
 				}
-
 			}
+
+			p {
+				font-size: 1.2em;
+				@include weight(100);
+			}
+
+			div.social-nav {
+
+				margin-bottom:10px;
+
+				& > a {
+					font-size: 3.5em;
+					margin-right:10px;
+				}
+			}
+
 		}
+
 	}
-	
+
 }

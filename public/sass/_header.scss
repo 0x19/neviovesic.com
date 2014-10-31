@@ -1,49 +1,316 @@
 header {
 
 	section {
+		
+		&.blue-header{
+			background-color: #2980b9;
+			border-bottom: 1px #3498db solid;
 
-		margin:20px auto auto auto;
+			& a.menu-handler{
+				border:1px #27ae60 solid;
+				color:#6ab1ee;
 
-		&.spy-row{
-			width:100vw;
-			position: fixed;
-		}
+				&:hover{
+					color:#6ab1ee;
+					text-shadow: 0px 0px 1px #6ab1ee;
+				}
+			}
 
-		& nav{
 
-			& li{
+			& .left-nav{
 
-				& a {
-					color:#333;
-					font-size: 1.5em;
-					@include weight(200);
+				a {
+					color:#4e9adb;
 
 					&:hover{
-						@include fade(fadeIn, 100ms, $from-opacity: .6);
-						color:#333;
-						text-shadow: 0px 0px 1px #999;
+						color:#7eb3e1;
+						text-shadow: 0px 0px 1px #4e9adb;
 					}
 
-				}
-
-				&:hover a{
-					background: none !important; /** Due to some reason it needs !important to be applied **/
-				}
-
-				&.active{
-
-					& a{
-						color:#333 !important; /** Due to some reason it needs !important to be applied **/
-						text-shadow: 0px 0px 1px #dadada;
-						@include weight(200);
-						background: none !important; /** Due to some reason it needs !important to be applied **/
+					&.active{
+						color:#7eb3e1;
+						text-shadow: 0px 0px 1px #4e9adb;
 					}
-
-					@include text-line(20px, #333, $display: block);
 
 				}
 			}
 
+			& .social-nav{
+
+				a {
+					color:#4e9adb;
+
+					&:hover{
+						color:#7eb3e1;
+						text-shadow: 0px 0px 1px #4e9adb;
+					}
+				}
+			}
+
+			& .main-menu{
+				background-color: #2980b9;
+				border-bottom:1px #3498db solid;
+				border-top: 1px #3498db solid;
+
+				.nav{
+
+					a {
+						color:#80bef3;
+
+						&:hover{
+							color:#80bef3;
+							text-shadow: 0px 0px 1px #80bef3;
+						}
+
+						&.active{
+							color:#80bef3;
+							text-shadow: 0px 0px 1px #80bef3;
+						}
+					}
+
+					p{
+						color:#59a9ee;
+					}
+				}
+			}
+
+		}
+
+		&.carrot-header{
+			background-color: #d35400;
+			border-bottom:1px #e67e22 solid;
+
+			& a.menu-handler{
+				border:1px #e57a33 solid;
+				color:#e57a33;
+
+				&:hover{
+					color:#e57a33;
+					text-shadow: 0px 0px 1px #e57a33;
+				}
+			}
+
+			& .left-nav{
+
+				a {
+					color:#e57a33;
+
+					&:hover{
+						color:#e57a33;
+						text-shadow: 0px 0px 1px #e57a33;
+					}
+
+					&.active{
+						color:#e57a33;
+						text-shadow: 0px 0px 1px #e57a33;
+					}
+
+				}
+			}
+
+			& .social-nav{
+
+				a {
+					color:#e57a33;
+
+					&:hover{
+						color:#e57a33;
+						text-shadow: 0px 0px 1px #e57a33;
+					}
+
+				}
+			}
+
+			& .main-menu{
+				background-color: #d35400;
+				border-bottom:1px #e67e22 solid;
+				border-top: 1px #e67e22 solid;
+
+				.nav{
+
+					a {
+						color:#f5a875;
+
+						&:hover{
+							color:#f5a875;
+							text-shadow: 0px 0px 1px #f5a875;
+						}
+
+						&.active{
+							color:#f5a875;
+							text-shadow: 0px 0px 1px #f5a875;
+						}
+					
+					}
+
+					p{
+						color:#ef965c;
+					}
+				}
+			}
+		}
+
+
+		&.dark-header{
+			background-color: #34495e;
+			border-bottom:1px #4e6173 solid;
+
+			& a.menu-handler{
+				border:1px #4e6173 solid;
+				color:#4e6173;
+
+				&:hover{
+					color:#7a8c9f;
+					text-shadow: 0px 0px 1px #7a8c9f;
+				}
+			}
+
+			& .left-nav{
+
+				a {
+					color:#61768a;
+
+					&:hover{
+						color:#7a8c9f;
+						text-shadow: 0px 0px 1px #7a8c9f;
+					}
+
+					&.active{
+						color:#7a8c9f;
+						text-shadow: 0px 0px 1px #7a8c9f;
+					}
+
+				}
+			}
+
+			& .social-nav{
+
+				a {
+					color:#61768a;
+
+					&:hover{
+						color:#7a8c9f;
+						text-shadow: 0px 0px 1px #7a8c9f;
+					}
+
+				}
+			}
+
+			& .main-menu{
+				background-color: #34495e;
+				border-bottom:1px #4e6173 solid;
+				border-top: 1px #4e6173 solid;
+
+				.nav{
+
+					a {
+						color:#61768a;
+
+						&:hover{
+							color:#7a8c9f;
+							text-shadow: 0px 0px 1px #7a8c9f;
+						}
+
+						&.active{
+							color:#7a8c9f;
+							text-shadow: 0px 0px 1px #7a8c9f;
+						}
+					
+					}
+
+					p{
+						color:#7a8c9f;
+					}
+				}
+			}
+		}
+
+		&.spy-row{
+			width:100vw;
+			position:fixed;
+			top:0;
+			overflow:auto;
+			padding:10px 0px 0px 0px;
+			z-index:1;
+		}
+
+		& a.menu-handler{
+			font-size: 2.1em;
+			padding:17px;
+			border-radius:5px;
+			z-index:100;
+			margin-left:-55px;
+			margin-top:-15px;
+			position:fixed;
+			z-index: 2 !important;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+		& .left-nav{
+			font-size:2em;
+			margin-left:20px;
+			margin:0px auto 8px auto;
+
+			a {
+				margin-right:5px;
+
+				&:hover{
+					@include fade(fadeIn, 600ms, $from-opacity: .8);
+					text-decoration: none;
+				}
+
+				&.active{
+					@include fade(fadeIn, 600ms, $from-opacity: .8);
+					text-decoration: none;
+				}
+
+			}
+		}
+
+		& .social-nav{
+			font-size:2em;
+			margin-right:20px;
+			margin:0px auto 8px auto;
+
+			a {
+				margin-right:5px;
+
+				&:hover{
+					@include fade(fadeIn, 600ms, $from-opacity: .8);
+					text-decoration: none;
+				}
+			}
+		}
+
+		& .main-menu{
+			position:fixed;
+			width:100vw;
+			padding:20px 0px 20px 0px;
+			z-index: 50;
+			@include fade(fadeIn, 200ms, $from-opacity: 0);
+			overflow:auto;
+
+			.nav{
+
+				a {
+					margin:0px 0px -10px -15px;
+					font-size: 2em;
+					@include weight(100);
+
+					&:hover{
+						text-decoration: none;
+						background: none !important; /** Due to some reason it needs !important to be applied **/
+					}
+				}
+
+				p{
+					font-size: 1.2em;
+					@include weight(100);
+				}
+			}
 		}
 	}
 

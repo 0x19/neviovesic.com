@@ -26,11 +26,24 @@ class NavigationCtrl extends BaseCtrl
 
   @pageName: null
   @isHomePage: false
+  @isNavActive: false
+  @isBiographyPage: false
+  @isContactPage: false
 
   initialize: ->
     @$scope.pageName   = @$state.current.name
-    @$scope.isHomePage = @$state.current.name == 'home'
+    @$scope.isNavActive = @isNavActive
 
+    @$scope.isHomePage = @$state.current.name == 'home'
+    @$scope.isBiographyPage = @$state.current.name == 'biography'
+    @$scope.isContactPage = @$state.current.name == 'contact'
+
+
+  toggleNav: ->
+    if @$scope.isNavActive == undefined
+      @$scope.isNavActive = false
+
+    @$scope.isNavActive = @isNavActive = @$scope.isNavActive == false ? true : false;
 
 class HeaderCtrl extends NavigationCtrl
   @register app

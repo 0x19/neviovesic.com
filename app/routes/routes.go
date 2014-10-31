@@ -27,13 +27,6 @@ func (_ tTemplates) Header(
 	return revel.MainRouter.Reverse("Templates.Header", args).Url
 }
 
-func (_ tTemplates) HeaderMini(
-		) string {
-	args := make(map[string]string)
-	
-	return revel.MainRouter.Reverse("Templates.HeaderMini", args).Url
-}
-
 func (_ tTemplates) Footer(
 		) string {
 	args := make(map[string]string)
@@ -46,6 +39,20 @@ func (_ tTemplates) HomePage(
 	args := make(map[string]string)
 	
 	return revel.MainRouter.Reverse("Templates.HomePage", args).Url
+}
+
+func (_ tTemplates) Biography(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("Templates.Biography", args).Url
+}
+
+func (_ tTemplates) Contact(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("Templates.Contact", args).Url
 }
 
 

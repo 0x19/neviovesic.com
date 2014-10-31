@@ -14,3 +14,17 @@
 		}
 	}
 }
+
+@mixin background-home($background_size: cover) {
+	background-image: url('../images/main-code.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size:$background_size;
+}
+
+@mixin background-nevio($background_size: cover) {
+	background-image: url('../images/myselfupsidedown.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:$background_size;
+}

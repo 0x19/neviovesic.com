@@ -4,7 +4,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 	$urlRouterProvider.otherwise('/')
 
 	header_view =
-		templateUrl: '/templates/header-mini/'
+		templateUrl: '/templates/header/'
 		controller: 'HeaderCtrl'
 
 	footer_view =
@@ -18,22 +18,31 @@ app.config ($stateProvider, $urlRouterProvider) ->
 				templateUrl: '/templates/home/'
 				controller: ($scope) ->
 					
-			'header@': 
-				templateUrl: '/templates/header/'
-				controller: 'HeaderCtrl'
-
+			'header@': header_view
 			'footer@': footer_view
 		}
 	})
 
-	$stateProvider.state('signin', {
-		url: '/signin',
+	$stateProvider.state('biography', {
+		url: '/biography',
 		views: {
 			'': 
-				templateUrl: '/templates/signin/'
+				templateUrl: '/templates/biography/'
 				controller: ($scope) ->
 					
-			'header@': header_view,
+			'header@': header_view
+			'footer@': footer_view
+		}
+	})
+
+	$stateProvider.state('contact', {
+		url: '/contact',
+		views: {
+			'': 
+				templateUrl: '/templates/contact/'
+				controller: ($scope) ->
+					
+			'header@': header_view
 			'footer@': footer_view
 		}
 	})
