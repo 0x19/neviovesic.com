@@ -1,10 +1,61 @@
 package controllers
 
-import "github.com/revel/revel"
+import (
+    "fmt"
+ 	"encoding/json"
+    "io/ioutil"
+    "os"
+	"github.com/revel/revel"
+)
+
+type JSONObject struct {
+    Pages   []PagesType
+}
+
+type PagesType struct {
+	Index        string
+    Title        string
+    Description  string
+    Keywords     string
+}
+
+type ErrorResponseType struct {
+	Status     bool
+	Message    error
+}
+
 
 type Templates struct {
 	App
 	*revel.Controller
+}
+
+func (c Templates) PageData() revel.Result {
+
+    rootpath, err := os.Getwd()
+    if err != nil {
+        fmt.Printf("File error: %v\n", err)
+        errorjson := ErrorResponseType{Status: false, Message: err}
+        return c.RenderJson(errorjson)
+    }
+
+    file, e := ioutil.ReadFile(fmt.Sprintf("%s/json/pages.json", rootpath))
+
+    if e != nil {
+        fmt.Printf("File error: %v\n", e)
+        errorjson := ErrorResponseType{Status: false, Message: e}
+        return c.RenderJson(errorjson)
+    }
+
+    fmt.Printf("%s\n", string(file))
+
+    var jsondata JSONObject
+
+    json.Unmarshal(file, &jsondata)
+
+    fmt.Printf("Results: %v\n", jsondata)
+
+	return c.RenderJson(jsondata)
 }
 
 func (c Templates) Header() revel.Result {

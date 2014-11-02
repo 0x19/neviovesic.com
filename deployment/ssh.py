@@ -34,8 +34,8 @@ class SSHClient(paramiko.SSHClient):
 			self.connect(
 				settings.REMOTE_SSH_HOST, 
 				username=settings.REMOTE_SSH_USERNAME, 
-				password=settings.REMOTE_SSH_PASSWORD,
-				port=settings.REMOTE_SSH_PORT
+				# password=settings.REMOTE_SSH_PASSWORD,
+				# port=settings.REMOTE_SSH_PORT
 			)
 
 			self._is_connected = True

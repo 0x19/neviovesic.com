@@ -17,7 +17,7 @@
       views: {
         '': {
           templateUrl: '/templates/home/',
-          controller: function($scope) {}
+          controller: 'PageCtrl'
         },
         'header@': header_view,
         'footer@': footer_view
@@ -28,7 +28,7 @@
       views: {
         '': {
           templateUrl: '/templates/biography/',
-          controller: function($scope) {}
+          controller: 'PageCtrl'
         },
         'header@': header_view,
         'footer@': footer_view
@@ -39,7 +39,7 @@
       views: {
         '': {
           templateUrl: '/templates/contact/',
-          controller: function($scope) {}
+          controller: 'PageCtrl'
         },
         'header@': header_view,
         'footer@': footer_view
@@ -50,7 +50,7 @@
       views: {
         '': {
           templateUrl: '/templates/playground/',
-          controller: function($scope) {}
+          controller: 'PageCtrl'
         },
         'header@': header_view,
         'footer@': footer_view
@@ -61,7 +61,7 @@
       views: {
         '': {
           templateUrl: '/templates/404/',
-          controller: function($scope) {}
+          controller: 'PageCtrl'
         },
         'header@': header_view,
         'footer@': footer_view

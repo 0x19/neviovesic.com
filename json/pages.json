@@ -1,0 +1,28 @@
+{
+	"Pages": [
+		{
+			"index": "home",
+			"title": "Nevio Vesic - Senior Software Engineer",
+			"description": "I'm Senior Software Engineer working for TelTech Systems Inc. Here you'll be able to discover everything that's relevant to me.",
+			"keywords": "nevio vesic, python, golang, coffeescript, saas, php, angular.js, javascript, senior software engineer, caopoeira, body building, telecommunications, sip, freeswitch, webrtc"
+		},
+		{
+			"index": "biography",
+			"title": "Nevio Vesic - Senior Software Engineer - My Biography",
+			"description": "Welcome to my biography page! I'm Senior Software Engineer working for TelTech Systems Inc. Reach me if you have any questions!",
+			"keywords": "nevio vesic, python, golang, coffeescript, saas, php, biography, angular.js, javascript, senior software engineer, caopoeira, body building, telecommunications, sip, freeswitch, webrtc"
+		},
+		{
+			"index": "playground",
+			"title": "Nevio Vesic - Senior Software Engineer - Playground",
+			"description": "Welcome to my blog + Python, GoLang, Sass, Coffeescript and PHP playground. Hope you'll find something interesting. If not, please let me know and I'll make sure to get on it!",
+			"keywords": "nevio vesic, python, golang, coffeescript, saas, php, angular.js, playground, javascript, senior software engineer, caopoeira, body building, telecommunications, sip, freeswitch, webrtc"
+		},
+		{
+			"index": "contact",
+			"title": "Nevio Vesic - Senior Software Engineer - Contact",
+			"description": "Welcome to my contact page. In case you have desire to connect with me, this is the place to find all necesarry details!",
+			"keywords": "nevio vesic, python, golang, coffeescript, saas, php, angular.js, contact, javascript, senior software engineer, caopoeira, body building, telecommunications, sip, freeswitch, webrtc"
+		}
+	]
+}

@@ -16,7 +16,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 		views: {
 			'': 
 				templateUrl: '/templates/home/'
-				controller: ($scope) ->
+				controller: 'PageCtrl'
 					
 			'header@': header_view
 			'footer@': footer_view
@@ -28,7 +28,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 		views: {
 			'': 
 				templateUrl: '/templates/biography/'
-				controller: ($scope) ->
+				controller: 'PageCtrl'
 					
 			'header@': header_view
 			'footer@': footer_view
@@ -40,7 +40,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 		views: {
 			'': 
 				templateUrl: '/templates/contact/'
-				controller: ($scope) ->
+				controller: 'PageCtrl'
 					
 			'header@': header_view
 			'footer@': footer_view
@@ -52,7 +52,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 		views: {
 			'': 
 				templateUrl: '/templates/playground/'
-				controller: ($scope) ->
+				controller: 'PageCtrl'
 					
 			'header@': header_view
 			'footer@': footer_view
@@ -64,7 +64,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 		views: {
 			'': 
 				templateUrl: '/templates/404/'
-				controller: ($scope) ->
+				controller: 'PageCtrl'
 					
 			'header@': header_view
 			'footer@': footer_view

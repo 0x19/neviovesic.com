@@ -10,7 +10,7 @@ ch.setFormatter(formatter)
 root.addHandler(ch)
 
 
-PROJECT_NAME = 'Nevio Vesics Website'
+PROJECT_NAME = 'Nevio'
 
 # SSH hostname of the server where website is residing
 REMOTE_SSH_HOST = None

@@ -6,6 +6,10 @@ module:testrunner
 
 GET     /                                       App.Router
 
+GET     /nagios                                 Service.Nagios
+
+GET     /templates/page-data                    Templates.PageData
+
 GET     /templates/header                       Templates.Header
 GET     /templates/footer                       Templates.Footer
 

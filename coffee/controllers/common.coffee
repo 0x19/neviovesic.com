@@ -48,8 +48,23 @@ class NavigationCtrl extends BaseCtrl
 
     @$scope.isNavActive = @isNavActive = @$scope.isNavActive == false ? true : false;
 
+
+class PageCtrl extends BaseCtrl
+  @register app
+  @inject '$scope', '$state', 'Page'
+
+  initialize: ->
+    @Page.fetchPageData()
+    @Page.setPageHeaders @$state.current.name
+
 class HeaderCtrl extends NavigationCtrl
   @register app
   
 class FooterCtrl extends NavigationCtrl
   @register app
+  @inject '$scope', '$state'
+
+
+  initialize: ->
+    super
+    @$scope.date = new Date
