@@ -11,6 +11,9 @@ cd $PROJECT_PATH
 
 sleep 1
 
+echo "Ensuring we are on the right github branch ..."
+git checkout PRODUCTION
+
 echo "Fetching latest version of the code from github ..."
 git pull origin PRODUCTION
 
