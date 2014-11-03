@@ -53,6 +53,6 @@ echo -e "$(tput setaf 2)Starting revel applilcation back up ..."
 /bin/su -m -l $USER -c "$GO_CMD" > "$WORKDIR/$NAME.log" 2>&1 &
 PID=$!
 echo $PID > "$PROJECT_PATH/$PROJECT_NAME.pid"
-
+echo $PID
 echo -e "$(tput setaf 2)Restarting nginx server ..."
 service nginx restart
