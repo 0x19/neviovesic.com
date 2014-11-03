@@ -1,8 +1,12 @@
 #!/bin/bash
 
+if [[ `id -u` -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
+
+$USER="root"
 HOME_DIR=`eval echo ~`
 PROJECT_PATH=`eval echo ~/gocode/src/neviovesic/`
 PROJECT_NAME="neviovesic" # app name for ogs etc ...
+GO_CMD="revel run neviovesic"
 
 # Activate whatever that we eventually need to activate in order to run deployment
 source $HOME_DIR/.profile
@@ -45,7 +49,8 @@ then
 fi
 
 echo -e "$(tput setaf 2)Starting revel applilcation back up ..."
-revel run neviovesic > /root/gocode/src/neviovesic/neviovesic.log 2>&1 &
+#revel run neviovesic > /root/gocode/src/neviovesic/neviovesic.log 2>&1 &
+/bin/su -m -l $USER -c "$GO_CMD" > "$WORKDIR/$NAME.log" 2>&1 &
 PID=$!
 echo $PID > "$PROJECT_PATH/$PROJECT_NAME.pid"
 
