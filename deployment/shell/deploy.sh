@@ -45,7 +45,7 @@ then
 fi
 
 echo -e "$(tput setaf 2)Starting revel applilcation back up ..."
-revel run neviovesic prod > /root/gocode/src/neviovesic/neviovesic.log 2>&1 &
+revel run neviovesic > /root/gocode/src/neviovesic/neviovesic.log 2>&1 &
 PID=$!
 echo $PID > "$PROJECT_PATH/$PROJECT_NAME.pid"
 
