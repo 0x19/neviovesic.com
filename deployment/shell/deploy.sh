@@ -18,8 +18,8 @@ echo -e "$(tput setaf 2)Making changes to nginx configuration files ..."
 
 # I know but I really wanna make sure i don't rewrite something else for now ...
 cp $PROJECT_PATH/deployment/nginx/nginx.conf /etc/nginx/
-cp -r $PROJECT_PATH/deployment/nginx/conf.d/ /etc/nginx/conf.d/
-
+cp $PROJECT_PATH/deployment/nginx/naxsi_core.rules /etc/nginx/
+cp -R $PROJECT_PATH/deployment/nginx/conf.d/ /etc/nginx/
 
 
 
