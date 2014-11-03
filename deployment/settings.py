@@ -13,7 +13,7 @@ root.addHandler(ch)
 PROJECT_NAME = 'Nevio'
 
 # SSH hostname of the server where website is residing
-REMOTE_SSH_HOST = None
+REMOTE_SSH_HOSTS = []
 
 # SSH username of the server where website is residing
 REMOTE_SSH_USERNAME = None
@@ -25,7 +25,7 @@ REMOTE_SSH_PASSWORD = None
 REMOTE_SSH_PORT = 22
 
 # SSH remote path to the project root
-REMOTE_BASE_PROJECT_PATH = '/home/telapi/gocode/neviovesic.com/'
+REMOTE_BASE_PROJECT_PATH = '~/gocode/src/neviovesic'
 
 try:
 	from settings_local import *
