@@ -14,4 +14,13 @@ sleep 1
 echo "Fetching latest version of the code from github ..."
 git pull origin PRODUCTION
 
+echo -e "$(tput setaf 2)Making changes to nginx configuration files ..."
+
+# I know but I really wanna make sure i don't rewrite something else for now ...
+cp $PROJECT_PATH/deployment/nginx/nginx.conf /etc/nginx/
+cp -r $PROJECT_PATH/deployment/nginx/conf.d/ /etc/nginx/conf.d/
+
+
+
+
 service nginx restart
