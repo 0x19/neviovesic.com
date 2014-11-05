@@ -4,6 +4,39 @@ package routes
 import "github.com/revel/revel"
 
 
+type tApp struct {}
+var App tApp
+
+
+func (_ tApp) Router(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Router", args).Url
+}
+
+func (_ tApp) Biography(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Biography", args).Url
+}
+
+func (_ tApp) Playground(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Playground", args).Url
+}
+
+func (_ tApp) Contact(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("App.Contact", args).Url
+}
+
+
 type tService struct {}
 var Service tService
 
@@ -84,15 +117,33 @@ func (_ tTemplates) Error500(
 }
 
 
-type tApp struct {}
-var App tApp
+type tTestRunner struct {}
+var TestRunner tTestRunner
 
 
-func (_ tApp) Router(
+func (_ tTestRunner) Index(
 		) string {
 	args := make(map[string]string)
 	
-	return revel.MainRouter.Reverse("App.Router", args).Url
+	return revel.MainRouter.Reverse("TestRunner.Index", args).Url
+}
+
+func (_ tTestRunner) Run(
+		suite string,
+		test string,
+		) string {
+	args := make(map[string]string)
+	
+	revel.Unbind(args, "suite", suite)
+	revel.Unbind(args, "test", test)
+	return revel.MainRouter.Reverse("TestRunner.Run", args).Url
+}
+
+func (_ tTestRunner) List(
+		) string {
+	args := make(map[string]string)
+	
+	return revel.MainRouter.Reverse("TestRunner.List", args).Url
 }
 
 
@@ -122,36 +173,6 @@ func (_ tStatic) ServeModule(
 	revel.Unbind(args, "prefix", prefix)
 	revel.Unbind(args, "filepath", filepath)
 	return revel.MainRouter.Reverse("Static.ServeModule", args).Url
-}
-
-
-type tTestRunner struct {}
-var TestRunner tTestRunner
-
-
-func (_ tTestRunner) Index(
-		) string {
-	args := make(map[string]string)
-	
-	return revel.MainRouter.Reverse("TestRunner.Index", args).Url
-}
-
-func (_ tTestRunner) Run(
-		suite string,
-		test string,
-		) string {
-	args := make(map[string]string)
-	
-	revel.Unbind(args, "suite", suite)
-	revel.Unbind(args, "test", test)
-	return revel.MainRouter.Reverse("TestRunner.Run", args).Url
-}
-
-func (_ tTestRunner) List(
-		) string {
-	args := make(map[string]string)
-	
-	return revel.MainRouter.Reverse("TestRunner.List", args).Url
 }
 
 

@@ -1,4 +1,4 @@
-<section class="spy-row row" ng-class="{'carrot-header': isBiographyPage, 'blue-header': isHomePage, 'dark-header': isContactPage, 'error-header': isErrorPage, 'green-header': isPlaygroundPage}">
+<section class="spy-row row [[if .isError404]]error-header[[end]][[if .isBiography]]carrot-header[[end]][[if .isPlayground]]green-header[[end]][[if .isContact]]dark-header[[end]]" ng-class="{'carrot-header': isBiographyPage, 'blue-header': isHomePage, 'dark-header': isContactPage, 'error-header': isErrorPage, 'green-header': isPlaygroundPage}">
 	<div class="container">
 		<div class="col-md-12 col-centered">
 			<div class="left-nav pull-left">
@@ -25,15 +25,15 @@
 		<div class="container">
 			<nav class="nav">
 				<li class="col-md-4 text-center">
-					<a ui-sref-active="active" href="/biography" title="Nevio Vesic - Senior Software Engineer - Biography" ui-sref="biography">Biography</a>
+					<a ui-sref-active="active" href="/#biography" title="Nevio Vesic - Senior Software Engineer - Biography" ui-sref="biography">Biography</a>
 					<p>All you need to know about me. You can always contact me for any additional info.</p>
 				</li>
 				<li class="col-md-4 text-center">
-					<a ui-sref-active="active" href="/playground" title="Nevio Vesic - Senior Software Engineer - Playground" ui-sref="playground">Playground</a>
+					<a ui-sref-active="active" href="/#playground" title="Nevio Vesic - Senior Software Engineer - Playground" ui-sref="playground">Playground</a>
 					<p>Here you'll be able to find my blog posts, code examples and many more.</p>
 				</li>
 				<li class="col-md-4 text-center">
-					<a ui-sref-active="active" href="/contact" title="Nevio Vesic - Senior Software Engineer - Contact" ui-sref="contact">Contact</a>
+					<a ui-sref-active="active" href="/#contact" title="Nevio Vesic - Senior Software Engineer - Contact" ui-sref="contact">Contact</a>
 					<p>In case you're interested to connect with me.</p>
 				</li>
 			</nav>
