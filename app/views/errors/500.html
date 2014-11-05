@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Application error</title>
-	</head>
-	<body>
-		{{if eq .RunMode "dev"}}
-		{{template "errors/500-dev.html" .}}
-		{{else}}
-		<h1>Oops, an error occured</h1>
-		<p>
-			This exception has been logged.
-		</p>
-		{{end}}
-	</body>
-</html>
+[[ set . "title" "Nevio Vesic - Something got broken - Internal Server Error" ]]
+[[ set . "metaDescription" "I'm Senior Software Engineer working for TelTech Systems Inc. Here you'll be able to discover everything that's relevant to me." ]]
+[[ set . "metaKeywords" "nevio vesic, python, golang, coffeescript, saas, php, angular.js, javascript, senior software engineer, caopoeira, body building, telecommunications, sip, freeswitch, webrtc" ]]
+
+[[ set . "deactivateAngular" "true" ]]
+[[ set . "isError404" "true" ]]
+
+[[template "header.html" .]]
+<section class="container-fluid">
+[[template "templates/500.html" .]]
+</section>
+[[template "footer.html" .]]

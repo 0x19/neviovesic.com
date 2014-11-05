@@ -1,4 +1,4 @@
-	<footer class="container-fluid" ui-view="footer" ng-hide="isContactPage"></footer>
+	<footer class="container-fluid" ui-view="footer" ng-hide="isContactPage">[[if .deactivateAngular ]][[ template "templates/footer.html" .]][[ end ]]</footer>
 
 </body>
 </html>

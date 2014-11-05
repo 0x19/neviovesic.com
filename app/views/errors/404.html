@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Not found</title>
-	</head>
-	<body>
-{{if eq .RunMode "dev"}}
-{{template "errors/404-dev.html" .}}
-{{else}}
-	{{with .Error}}
-	<h1>
-		{{.Title}}
-	</h1>
-	<p>
-		{{.Description}}
-	</p>
-	{{end}}
-{{end}}
-	</body>
-</html>
+[[ set . "title" "Nevio Vesic - Page Not Found" ]]
+[[ set . "metaDescription" "I'm Senior Software Engineer working for TelTech Systems Inc. Here you'll be able to discover everything that's relevant to me." ]]
+[[ set . "metaKeywords" "nevio vesic, python, golang, coffeescript, saas, php, angular.js, javascript, senior software engineer, caopoeira, body building, telecommunications, sip, freeswitch, webrtc" ]]
+
+[[ set . "deactivateAngular" "true" ]]
+[[ set . "isError404" "true" ]]
+
+[[template "header.html" .]]
+<section class="container-fluid">
+[[template "templates/404.html" .]]
+</section>
+[[template "footer.html" .]]

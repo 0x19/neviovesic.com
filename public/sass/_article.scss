@@ -1,49 +1,38 @@
-section.viewport-blue{
-	width:100vw;
-	background-color: #2980b9;
-	margin-left:-15px;
-	padding:0px;
-	border-bottom:2px #3498db solid;
-}
+section {
 
-section.viewport-carrot{
-	width:100vw;
-	background-color: #d35400;
-	margin-left:-15px;
-	padding:0px;
-	border-bottom:2px #e67e22 solid;
-}
+	@mixin viewport-style($viewport-color, $border-style: none) {
+		width:100vw;
+		background-color: $viewport-color;
+		margin-left:-15px;
+		padding:0px;
+		border:none;
+		border-bottom:$border-style;
+	}
 
-section.viewport-dark{
-	width:100vw;
-	background-color: #34495e;
-	margin-left:-15px;
-	padding:0px;
-	border:none;
-}
+	.viewport-blue{
+		@include viewport-style(#2980b9, 2px #3498db solid);
+	}
 
-section.viewport-error{
-	width:100vw;
-	background-color: #c0392b;
-	margin-left:-15px;
-	padding:0px;
-	border:none;
-}
+	.viewport-carrot{
+		@include viewport-style(#d35400, 2px #e67e22 solid);
+	}
 
-section.viewport-article{
-	width:100vw;
-	background-color: #ecf0f1;
-	margin-left:-15px;
-	padding:0px;
-	border:none;
-}
+	.viewport-dark{
+		@include viewport-style(#34495e);
+	}
 
-section.viewport-playground{
-	width:100vw;
-	background-color: #27ae60;
-	margin-left:-15px;
-	padding:0px;
-	border:none;
+	.viewport-error{
+		@include viewport-style(#c0392b, 2px #e74c3c solid);
+	}
+
+	.viewport-article{
+		@include viewport-style(#ecf0f1);
+	}
+
+	.viewport-playground{
+		@include viewport-style(#27ae60, 2px #2ecc71 solid);
+	}
+
 }
 
 article.container-main-page{
@@ -265,7 +254,7 @@ article.container-error{
 		margin-top:10vh;
 		font-size: 15em;
 		color:#c73d2f;
-		margin-left:-30px;
+		margin-left:-25px;
 	}
 
 

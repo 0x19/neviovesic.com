@@ -5,6 +5,9 @@
 module:testrunner
 
 GET     /                                       App.Router
+GET     /biography                              App.Biography
+GET     /playground                             App.Playground
+GET     /contact                                App.Contact
 
 GET     /nagios                                 Service.Nagios
 
