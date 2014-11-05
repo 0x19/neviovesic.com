@@ -5,7 +5,7 @@ footer {
 	section {
 		&.container {
 			margin:20px auto 20px auto;
-			color:#6f8498;
+			color:#92acc4;
 
 			h2{
 				font-size: 3em;
@@ -17,6 +17,7 @@ footer {
 			}
 
 			p {
+				color:#92acc4;
 				font-size: 1.2em;
 				@include weight(100);
 			}
