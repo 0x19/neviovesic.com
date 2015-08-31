@@ -1,0 +1,79 @@
+section	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^<section class="container hidden" ng-hide="isContactPage">$/;"	function	line:1
+h	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^	<h2><strong class="text-line">How<\/strong> to reach me?<\/h2>$/;"	function	line:2
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^	<p>Best way to reach me is over my <a href="mailto:nevio@teltech.co">email address<\/a> or <a href="skype:nevio.vesic?chat">skype<\/a>. Social networks I have but lately I do avoid them as much as possible. Never the less, here they are.<\/p>$/;"	function	line:3
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^	<div class="social-nav">$/;"	function	line:5
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^		<a href="https:\/\/github.com\/0x19" title="Nevio Vesic (0x19) | Github"><i class="fa fa-github"><\/i><\/a>$/;"	function	line:6
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^		<a href="https:\/\/www.facebook.com\/noxten" title="Nevio Vesic | Facebook"><i class="fa fa-facebook"><\/i><\/a>$/;"	function	line:7
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^		<a href="https:\/\/twitter.com\/vesicnevio" title="Nevio Vesic (@vesicnevio) | Twitter"><i class="fa fa-twitter"><\/i><\/a>$/;"	function	line:8
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^		<a href="https:\/\/www.linkedin.com\/in\/neviovesic" title="Nevio Vesic | Linkedin"><i class="fa fa-linkedin"><\/i><\/a>$/;"	function	line:9
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^		<a href="https:\/\/plus.google.com\/112805182312103136687\/" title="Nevio Vesic - Google+" rel="me"><i class="fa fa-google-plus"><\/i><\/a>$/;"	function	line:10
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^		<a href="skype:nevio.vesic?chat" title="Nevio Vesic (nevio.vesic) | Skype"><i class="fa fa-skype"><\/i><\/a>$/;"	function	line:11
+small	/Users/0x19/gocode/src/neviovesic/app/views/templates/footer.html	/^	<small>&copy; [[if .deactivateAngular ]]2014[[end]][[if not .deactivateAngular ]]{{date | date:'yyyy'}}[[end]] <a href="\/" ui-sref="home" title="Nevio Vesic - Senior Software Engineer">Nevio Vesic<\/a><\/small>$/;"	function	line:14
+section	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^<section class="spy-row row [[if .isError404]]error-header[[end]][[if .isBiography]]carrot-header[[end]][[if .isPlayground]]green-header[[end]][[if .isContact]]dark-header[[end]]" ng-class="{'carrot-header': isBiographyPage, 'blue-header': isHomePage, 'dark-header': isContactPage, 'error-header': isErrorPage, 'green-header': isPlaygroundPage}">$/;"	function	line:1
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^	<div class="container">$/;"	function	line:2
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^		<div class="col-md-12 col-centered">$/;"	function	line:3
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^			<div class="left-nav pull-left">$/;"	function	line:4
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a ui-sref-active="active" href="\/" title="Nevio Vesic - Senior Software Engineer" ui-sref="home" title=""><i class="fa fa-home"><\/i><\/a>$/;"	function	line:5
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^			<div class="text-center">$/;"	function	line:9
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a href="javascript:void(0);" class="menu-handler" ng-click="navBarStatus=true"><i class="fa fa-bars"><\/i><\/a>$/;"	function	line:10
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^			<div class="social-nav pull-right">$/;"	function	line:14
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a href="https:\/\/github.com\/0x19" title="Nevio Vesic (0x19) | Github"><i class="fa fa-github"><\/i><\/a>$/;"	function	line:15
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a href="https:\/\/www.facebook.com\/noxten" title="Nevio Vesic | Facebook"><i class="fa fa-facebook"><\/i><\/a>$/;"	function	line:16
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a href="https:\/\/twitter.com\/vesicnevio" title="Nevio Vesic (@vesicnevio) | Twitter"><i class="fa fa-twitter"><\/i><\/a>$/;"	function	line:17
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a href="https:\/\/www.linkedin.com\/in\/neviovesic" title="Nevio Vesic | Linkedin"><i class="fa fa-linkedin"><\/i><\/a>$/;"	function	line:18
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a href="https:\/\/plus.google.com\/112805182312103136687\/" title="Nevio Vesic - Google+" rel="me"><i class="fa fa-google-plus"><\/i><\/a>$/;"	function	line:19
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<a href="skype:nevio.vesic?chat" title="Nevio Vesic (nevio.vesic) | Skype"><i class="fa fa-skype"><\/i><\/a>$/;"	function	line:21
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^	<div class="main-menu" ng-show="navBarStatus">$/;"	function	line:27
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^		<div class="container">$/;"	function	line:28
+nav	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^			<nav class="nav">$/;"	function	line:29
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<li class="col-md-4 text-center">$/;"	function	line:30
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^					<a ui-sref-active="active" href="\/#biography" title="Nevio Vesic - Senior Software Engineer - Biography" ui-sref="biography">Biography<\/a>$/;"	function	line:31
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^					<p>All you need to know about me. You can always contact me for any additional info.<\/p>$/;"	function	line:32
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<li class="col-md-4 text-center">$/;"	function	line:34
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^					<a ui-sref-active="active" href="\/#playground" title="Nevio Vesic - Senior Software Engineer - Playground" ui-sref="playground">Playground<\/a>$/;"	function	line:35
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^					<p>Here you'll be able to find my blog posts, code examples and many more.<\/p>$/;"	function	line:36
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^				<li class="col-md-4 text-center">$/;"	function	line:38
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^					<a ui-sref-active="active" href="\/#contact" title="Nevio Vesic - Senior Software Engineer - Contact" ui-sref="contact">Contact<\/a>$/;"	function	line:39
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/header.html	/^					<p>In case you're interested to connect with me.<\/p>$/;"	function	line:40
+main	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^<main>$/;"	function	line:1
+section	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^	<section class="container-entire-viewport viewport-dark">$/;"	function	line:3
+article	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^		<article class="container container-contact text-center">$/;"	function	line:5
+h	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^			<h1>How to <strong>contact<\/strong> me?<\/h1>$/;"	function	line:6
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^			<p class="mydescription">The best way to reach me is over my <a href="mailto:nevio@teltech.co">email address<\/a>. Social networks I have but lately I do avoid them as much as I possibly can. Time waster! Never the less, here they are.<\/p>$/;"	function	line:7
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^			<p class="mydescription">If you however spot any bugs, I would please you to create <a href="https:\/\/github.com\/0x19\/neviovesic.com\/issues\/new" title="New Issue · 0x19\/neviovesic.com">github issue<\/a>. Thank You!<\/p>$/;"	function	line:9
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^			<div class="social-nav">$/;"	function	line:11
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^				<a href="https:\/\/github.com\/0x19" title="Nevio Vesic (0x19) | Github"><i class="fa fa-github"><\/i><\/a>$/;"	function	line:12
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^				<a href="https:\/\/www.facebook.com\/noxten" title="Nevio Vesic | Facebook"><i class="fa fa-facebook"><\/i><\/a>$/;"	function	line:13
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^				<a href="https:\/\/twitter.com\/vesicnevio" title="Nevio Vesic (@vesicnevio) | Twitter"><i class="fa fa-twitter"><\/i><\/a>$/;"	function	line:14
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^				<a href="https:\/\/www.linkedin.com\/in\/neviovesic" title="Nevio Vesic | Linkedin"><i class="fa fa-linkedin"><\/i><\/a>$/;"	function	line:15
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^				<a href="https:\/\/plus.google.com\/112805182312103136687\/" title="Nevio Vesic - Google+" rel="me"><i class="fa fa-google-plus"><\/i><\/a>$/;"	function	line:16
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/contact.html	/^				<a href="skype:nevio.vesic?chat" title="Nevio Vesic (nevio.vesic) | Skype"><i class="fa fa-skype"><\/i><\/a>$/;"	function	line:17
+main	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^<main>$/;"	function	line:1
+section	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^	<section class="container-entire-viewport viewport-blue">$/;"	function	line:3
+article	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^		<article class="container container-main-page text-center">$/;"	function	line:5
+h	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<h1>Hello there! I'm <strong>Nevio<\/strong>!<\/h1>$/;"	function	line:6
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<p class="mydescription">$/;"	function	line:7
+abbr	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<abbr title="Senior Software Engineer">Senior Software Engineer<\/abbr> working for$/;"	function	line:8
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="http:\/\/www.teltech.co" class="label label-success" title="TelTech - NJ's Premiere Tech Startup">TelTech Systems Inc.<\/a>$/;"	function	line:9
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<p class="mydescription">Outside of technical scope you can find me <a href="http:\/\/www.studio9.com.hr\/" title="Fitness Studio 9" class="hobbies">weight lifting<\/a> or talking long walks with my two dogs!<\/h2>$/;"	function	line:13
+nav	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<nav>$/;"	function	line:15
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<li>$/;"	function	line:16
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="https:\/\/github.com\/0x19" class="btn btn-danger btn-lg" title="GitHub - 0x19"><span class="fa fa-github"><\/span> Github<\/a>$/;"	function	line:17
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<li><a href="https:\/\/www.linkedin.com\/in\/neviovesic" class="btn btn-primary btn-lg" title="Nevio Vesic | Linkedin"><span class="fa fa-linkedin"><\/span> LinkedIn<\/a><\/li>$/;"	function	line:19
+nav	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<nav class="whatido">$/;"	function	line:22
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<li><a href="http:\/\/php.net\/" title="PHP: Hypertext Preprocessor"><strong>12+ years<\/strong>php<\/a><\/li>$/;"	function	line:23
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<li><a href="https:\/\/www.python.org" title="Welcome to Python.org"><strong>4+ years<\/strong>python<\/a><\/li>$/;"	function	line:24
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<li><a href="https:\/\/golang.org\/" title="The Go Programming Language"><strong>2+ years<\/strong>golang<\/a><\/li>$/;"	function	line:25
+li	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<li><a href="https:\/\/golang.org\/" title="The Go Programming Language"><strong>X+ years<\/strong>ton of languages\/utilities<\/a><\/li>$/;"	function	line:26
+section	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^	<section class="container-entire-viewport viewport-dark">$/;"	function	line:32
+article	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^		<article class="container container-contact text-center">$/;"	function	line:34
+h	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<h1>How to <strong>contact<\/strong> me?<\/h1>$/;"	function	line:35
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<p class="mydescription">The best way to reach me is over my <a href="mailto:nevio@teltech.co">email address<\/a>. Social networks I have but lately I do avoid them as much as I possibly can. Never the less, here they are.<\/p>$/;"	function	line:36
+p	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<p class="mydescription">If you however spot any bugs, I would please you to create <a href="https:\/\/github.com\/0x19\/neviovesic.com\/issues\/new" title="New Issue · 0x19\/neviovesic.com">github issue<\/a>. Thank You!<\/p>$/;"	function	line:38
+div	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^			<div class="social-nav">$/;"	function	line:40
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="https:\/\/github.com\/0x19" title="Nevio Vesic (0x19) | Github"><i class="fa fa-github"><\/i><\/a>$/;"	function	line:41
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="https:\/\/www.facebook.com\/noxten" title="Nevio Vesic | Facebook"><i class="fa fa-facebook"><\/i><\/a>$/;"	function	line:42
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="https:\/\/twitter.com\/vesicnevio" title="Nevio Vesic (@vesicnevio) | Twitter"><i class="fa fa-twitter"><\/i><\/a>$/;"	function	line:43
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="https:\/\/www.linkedin.com\/in\/neviovesic" title="Nevio Vesic | Linkedin"><i class="fa fa-linkedin"><\/i><\/a>$/;"	function	line:44
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="https:\/\/plus.google.com\/112805182312103136687\/" title="Nevio Vesic - Google+" rel="me"><i class="fa fa-google-plus"><\/i><\/a>$/;"	function	line:45
+a	/Users/0x19/gocode/src/neviovesic/app/views/templates/home.html	/^				<a href="skype:nevio.vesic?chat" title="Nevio Vesic (nevio.vesic) | Skype"><i class="fa fa-skype"><\/i><\/a>$/;"	function	line:46

@@ -77,9 +77,9 @@
       this.$scope.pageName = this.$state.current.name;
       this.$scope.isNavActive = this.isNavActive;
       this.$scope.isHomePage = this.$state.current.name === 'home';
-      this.$scope.isBiographyPage = this.$state.current.name === 'biography';
+      this.$scope.isBiographyPage = this.$state.current.name === '404';
       this.$scope.isContactPage = this.$state.current.name === 'contact';
-      this.$scope.isPlaygroundPage = this.$state.current.name === 'playground';
+      this.$scope.isPlaygroundPage = this.$state.current.name === '404';
       return this.$scope.isErrorPage = this.$state.current.name === '404' || this.$state.current.name === '500';
     };
 
