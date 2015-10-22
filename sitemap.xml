@@ -7,19 +7,9 @@
 	  <changefreq>monthly</changefreq>
 	</url>
 	<url>
-	  <loc>http://www.neviovesic.com/biography</loc>
-	  <priority>0.8</priority>
-	  <changefreq>monthly</changefreq>
-	</url>
-	<url>
-	  <loc>http://www.neviovesic.com/playground</loc>
-	  <priority>1.0</priority>
-	  <changefreq>weekly</changefreq>
-	</url>
-	<url>
 	  <loc>http://www.neviovesic.com/contact</loc>
 	  <priority>0.8</priority>
 	  <changefreq>monthly</changefreq>
 	</url>
-	
+
 </urlset>
